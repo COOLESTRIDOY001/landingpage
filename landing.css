@@ -1,0 +1,57 @@
+#img:hover{
+    transition: scale 2s ;
+    transform: scale(1.1);
+}
+#img{
+    position:relative;
+    overflow: hidden;
+}
+#layer{
+    background-color: transparent ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+#layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+#goat:hover{
+    transition: scale 2s;
+    transform: scale(1.1);
+}
+#yo{
+    animation: bounce 0.8s infinite;
+    position:relative;
+}
+@keyframes bounce{
+    0%, 100% {
+        transform: translate(0px)
+    }
+    50% {
+        transform: translateY(10px);
+        animation-timing-function: ease-in;
+    }
+}
+#background{
+   background-image: url('/215e153890fbddd2b7859184b3e97168b032cc6b\ \(1\).jpg');
+   width: full;
+   height: 600px;
+   background-position: center;
+}
